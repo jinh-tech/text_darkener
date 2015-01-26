@@ -1,9 +1,8 @@
 clear;
 clc;
-img = imread("sample2.jpg");
+img = imread("sample3.jpg");
 %img=img(100:400,100:400,:);
 figure(1);
-imagesc(img);
 for v = [10]
 
 x = size(img,1);
@@ -23,5 +22,6 @@ for i=v+1:x
 		img1(i,j,3)-=2*temp;
 	end
  end
-imagesc(img1);
+imwrite(img1,"with_abs_sample3.jpg");
+
 end
