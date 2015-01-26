@@ -16,12 +16,12 @@ for i=v+1:x
  		red=img(i-v:i+v,j-v:j+v,1)(:);
  		green=img(i-v:i+v,j-v:j+v,2)(:);
  		blue=img(i-v:i+v,j-v:j+v,3)(:);
- 		temp=(mean(abs(red-img(i,j,1)))+mean(abs(green-img(i,j,2)))+mean(abs(blue-img(i,j,3))))/3;
+ 		temp=(mean(red-img(i,j,1))+mean(green-img(i,j,2))+mean(blue-img(i,j,3)))/3;
  		img1(i,j,1)-=2*temp;
 		img1(i,j,2)-=2*temp;
 		img1(i,j,3)-=2*temp;
 	end
  end
-imwrite(img1,"with_abs_sample3.jpg");
+imwrite(img1,"no_abs_sample3.jpg");
 
 end
