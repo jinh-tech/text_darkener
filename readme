@@ -1,0 +1,7 @@
+Text Darkener
+
+Darkens the text in a picture. The darkening mght make the text more visible but does not sharpen the image.
+
+Complexity - O(no. of pixels * 400)
+
+This algorithm is very very very very slow..... so have patience while processing an image bigger that 1000 * 1000 pixels.
