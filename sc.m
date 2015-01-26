@@ -1,7 +1,7 @@
 clear;
 clc;
-img = imread("a2.jpg");
-img=img(100:400,100:400,:);
+img = imread("sample2.jpg");
+%img=img(100:400,100:400,:);
 figure(1);
 imagesc(img);
 for v = [10]
